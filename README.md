@@ -66,6 +66,8 @@ Check the `Findings/` folder for full details.
 
 ##  Project Structure
 
+
+```
 OWASP-Juice-Shop-VAPT/
 │
 ├── README.md
@@ -80,7 +82,7 @@ OWASP-Juice-Shop-VAPT/
 │   └── tools.md
 └── Methodology/
     └── testing_methodology.md
-
+```
 
 ---
 
