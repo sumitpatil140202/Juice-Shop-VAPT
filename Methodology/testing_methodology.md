@@ -1,82 +1,60 @@
-# Tools Used
+# Testing Methodology
 
-During the security assessment of the OWASP Juice Shop application, I used a combination of manual testing techniques and supporting security tools. The goal was to simulate real-world attack scenarios and identify practical security weaknesses.
-
----
-
-##  Burp Suite (Community Edition)
-
-Burp Suite was my primary tool for intercepting and analyzing HTTP/HTTPS traffic.
-
-**How I used it:**
-
-- Intercepted and modified requests/responses  
-- Tested authentication and authorization flows  
-- Performed brute force testing using Intruder  
-- Manipulated parameters to identify IDOR and access control issues  
-- Analyzed cookies, JWT tokens, and session behavior  
-
-> This tool was heavily used throughout the engagement.
+This document outlines the methodology followed during the security assessment of the OWASP Juice Shop application. The goal was to simulate real-world attack scenarios and identify vulnerabilities in a structured and professional manner.
 
 ---
 
-##  Google Chrome Developer Tools
+##  Testing Approach
 
-Chrome DevTools was used mainly for client-side analysis.
-
-**Activities performed:**
-
-- Inspected DOM to identify DOM-based XSS  
-- Reviewed JavaScript sources and sinks  
-- Monitored network traffic  
-- Checked security headers and cookies  
-- Observed application behavior during testing  
-
-> Helped in identifying several client-side weaknesses.
+- **Scope:** Black-box web application testing  
+- **Objective:** Identify security weaknesses, including authentication, authorization, input validation, session management, and business logic flaws  
+- **Environment:** All testing performed in a controlled lab environment on the intentionally vulnerable OWASP Juice Shop application  
+- **Proxy Setup:** All browser traffic routed through Burp Suite for analysis and manipulation  
 
 ---
 
-##  npm audit
+##  Phases of Assessment
 
-To evaluate third-party dependency risks, I ran **npm audit**.
+### 1. Reconnaissance
+- Performed initial discovery of application functionality  
+- Enumerated endpoints, parameters, and potential attack surfaces  
+- Reviewed publicly available information and documentation  
 
-**Purpose:**
+### 2. Vulnerability Identification
+- Conducted both **manual testing** and **automated scanning**  
+- Tools used included Burp Suite, npm audit, and browser developer tools  
+- Manual techniques included:
+  - Parameter tampering  
+  - Forced browsing  
+  - JWT decoding and analysis  
+  - DOM inspection  
+  - CSRF testing  
 
-- Detect vulnerable packages  
-- Identify known CVEs in dependencies  
-- Assess supply chain security risks  
+### 3. Exploitation
+- Validated identified vulnerabilities by safely exploiting them in a controlled environment  
+- Created proof-of-concept (PoC) files for vulnerabilities such as CSRF and XSS  
+- Ensured no real harm to systems (educational environment only)  
 
-> Findings from this tool contributed to the insecure dependency vulnerability.
+### 4. Documentation
+- Captured screenshots and evidence for all vulnerabilities  
+- Prepared detailed writeups per vulnerability  
+- Categorized vulnerabilities by severity (Critical, High, Medium)  
+- Mapped findings to OWASP Top 10 web application risks  
+
+### 5. Reporting
+- Compiled all findings into a professional VAPT report (PDF)  
+- Included detailed technical descriptions, screenshots, PoC, and risk recommendations  
 
 ---
 
-##  Manual Testing Techniques
+##  Notes on Methodology
 
-Most vulnerabilities were identified through manual testing rather than only automated tools.
-
-**Techniques performed:**
-
-- Parameter tampering  
-- Forced browsing  
-- IDOR enumeration  
-- JWT decoding and analysis  
-- CSRF proof-of-concept testing  
-- Input validation testing  
-- Business logic manipulation  
-
-> Manual testing was critical in uncovering access control and logic flaws.
-
----
-
-##  Testing Environment
-
-- **Target Application:** OWASP Juice Shop  
-- **Testing Approach:** Black-box web application testing  
-- **Proxy Setup:** Browser traffic routed through Burp Suite  
-- **Encoding/Decoding:** Base64 decoding used for JWT inspection  
+- Emphasis on **manual testing**: Most vulnerabilities were discovered through thoughtful testing rather than automated tools alone  
+- All testing followed **ethical and controlled procedures**  
+- Risk ratings were assigned based on likelihood and impact  
 
 ---
 
 ##  Disclaimer
 
-All testing was performed in a **controlled lab environment** on the intentionally vulnerable OWASP Juice Shop application for **educational and security assessment purposes only**.
+All testing was conducted **legally** on the OWASP Juice Shop lab environment for **educational and portfolio purposes only**. No production systems were tested or harmed.
