@@ -71,15 +71,15 @@ OWASP-Juice-Shop-VAPT/
 ├── README.md
 ├── LICENSE
 ├── VAPT_Report/
-│ └── OWASP_Juice_Shop_VAPT_Report.pdf
+│   └── OWASP_Juice_Shop_VAPT_Report.pdf
 ├── Findings/
-│ ├── Critical/
-│ ├── High/
-│ └── Medium/
+│   ├── Critical/
+│   ├── High/
+│   └── Medium/
 ├── Tools_Used/
-│ └── tools.md
+│   └── tools.md
 └── Methodology/
-└── testing_methodology.md
+    └── testing_methodology.md
 
 
 ---
