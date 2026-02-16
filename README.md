@@ -22,7 +22,7 @@ This project is part of my **cybersecurity portfolio** and demonstrates skills i
 
 ##  Tools Used
 
-For a detailed list, see [Tools_Used/tools.md](Tools_Used/tools.md).  
+For a detailed list, open the **Tools_Used/** folder.  
 Key tools included:
 
 - **Burp Suite (Community Edition):** Intercept and manipulate HTTP requests, perform brute force, analyze cookies and JWT tokens.  
@@ -79,9 +79,9 @@ OWASP-Juice-Shop-VAPT/
 │   ├── High/
 │   └── Medium/
 ├── Tools_Used/
-│   └── tools.md
+│   └── README.md
 └── Methodology/
-    └── testing_methodology.md
+    └── README.md
 ```
 
 ---
