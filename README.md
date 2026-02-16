@@ -22,7 +22,8 @@ This project is part of my **cybersecurity portfolio** and demonstrates skills i
 
 ##  Tools Used
 
-For a detailed list, open the **Tools_Used/** folder.  
+For a detailed list, see the [Tools Used](Tools_Used/).  
+
 Key tools included:
 
 - **Burp Suite (Community Edition):** Intercept and manipulate HTTP requests, perform brute force, analyze cookies and JWT tokens.  
@@ -34,7 +35,7 @@ Key tools included:
 
 ##  Testing Methodology
 
-For detailed methodology, see [Methodology/testing_methodology.md](Methodology/testing_methodology.md).  
+For detailed methodology, see the [Testing Methodology](Methodology/).
 
 Summary:
 
