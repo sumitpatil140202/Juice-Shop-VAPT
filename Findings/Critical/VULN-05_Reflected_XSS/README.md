@@ -26,7 +26,7 @@ Search functionality (`/search`)
 
 1. Navigate to the search bar in the application.
 2. Enter the following payload in the search field:
-    <img src=x onerror=alert(1)> ```
+   ``` <img src=x onerror=alert(1)> ```
 3. Submit the search request.  
 4. Observe that a JavaScript alert executes in the browser.
 
@@ -63,3 +63,4 @@ Refer to the screenshots showing:
 ## OWASP Mapping
 
 OWASP Top 10 2025 – A05: Injection
+
