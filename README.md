@@ -147,7 +147,7 @@ The following table provides a consolidated view of all identified vulnerabiliti
 | VULN-24 | Information Leakage Through Error Responses | Medium | A10:2025 – Mishandling of Exceptional Conditions |
 
 ---
-
+```
 ## Repository Structure
 OWASP-Juice-Shop-VAPT/
 │
@@ -167,7 +167,7 @@ OWASP-Juice-Shop-VAPT/
 │
 └── Methodology/
 └── README.md
-
+```
 
 Each vulnerability folder contains:
 
