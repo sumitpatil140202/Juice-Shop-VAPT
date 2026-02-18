@@ -8,7 +8,7 @@
 A comprehensive **manual web application security assessment** of the OWASP Juice Shop application.  
 This project demonstrates real-world penetration testing skills including vulnerability discovery, exploitation, and professional reporting.
 
->  All testing was performed ethically in a controlled lab environment on an intentionally vulnerable application.
+> All testing was performed ethically in a controlled lab environment on an intentionally vulnerable application.
 
 ---
 
@@ -115,8 +115,40 @@ Includes:
 
 ---
 
+## Vulnerability Summary
+
+The following table provides a consolidated view of all identified vulnerabilities.
+
+| ID | Vulnerability | Severity | OWASP Category |
+|----|--------------|----------|----------------|
+| VULN-01 | SQL Injection (Authentication Bypass) | Critical | A05:2025 – Injection |
+| VULN-02 | Vertical Privilege Escalation to Administrator | Critical | A01:2025 – Broken Access Control |
+| VULN-03 | Weak Authentication Enforcement | Critical | A07:2025 – Authentication Failures |
+| VULN-04 | Sensitive Data Exposure via API Response | Critical | A02:2025 – Cryptographic Failures |
+| VULN-05 | Insecure Third-Party Dependencies | Critical | A06:2025 – Vulnerable Components |
+| VULN-06 | Insecure Direct Object Reference (IDOR) | High | A01:2025 – Broken Access Control |
+| VULN-07 | Forced Browsing (Sensitive Directory Exposure) | High | A05:2025 – Security Misconfiguration |
+| VULN-08 | Horizontal Privilege Escalation (Basket Takeover) | High | A01:2025 – Broken Access Control |
+| VULN-09 | Insecure Cross-Origin Resource Sharing (CORS) | High | A05:2025 – Security Misconfiguration |
+| VULN-10 | Insecure JWT Token Handling | High | A07:2025 – Authentication Failures |
+| VULN-11 | Excessive Data Exposure | High | A02:2025 – Cryptographic Failures |
+| VULN-12 | Reflected Cross-Site Scripting (XSS) | High | A05:2025 – Injection |
+| VULN-13 | DOM-Based Cross-Site Scripting (XSS) | High | A05:2025 – Injection |
+| VULN-14 | Rate Limiting Failure | High | A07:2025 – Authentication Failures |
+| VULN-15 | Weak Password Policy | High | A07:2025 – Authentication Failures |
+| VULN-16 | Client-Side Trust Issues | High | A04:2025 – Insecure Design |
+| VULN-17 | JWT Mismanagement (No Revocation) | High | A07:2025 – Authentication Failures |
+| VULN-18 | No Logging of Failed Login Attempts | High | A09:2025 – Security Logging Failures |
+| VULN-19 | No Monitoring of Abnormal API Behavior | High | A09:2025 – Security Logging Failures |
+| VULN-20 | Cross-Site Request Forgery (CSRF) | High | A01:2025 – Broken Access Control |
+| VULN-21 | Verbose Error Messages Disclosure | Medium | A10:2025 – Mishandling of Exceptional Conditions |
+| VULN-22 | Missing Security Headers | Medium | A05:2025 – Security Misconfiguration |
+| VULN-23 | Improper Exception Handling | Medium | A10:2025 – Mishandling of Exceptional Conditions |
+| VULN-24 | Information Leakage Through Error Responses | Medium | A10:2025 – Mishandling of Exceptional Conditions |
+
+---
+
 ## Repository Structure
-```
 OWASP-Juice-Shop-VAPT/
 │
 ├── README.md
@@ -135,7 +167,7 @@ OWASP-Juice-Shop-VAPT/
 │
 └── Methodology/
 └── README.md
-```
+
 
 Each vulnerability folder contains:
 
@@ -187,7 +219,8 @@ This project was conducted strictly for **educational and ethical security resea
 
 ## Author
 
-**Kingsmen**  
+**Sumit Patil** 
+`sumitpatil.140202@gmail.com`
 Cybersecurity Student | CEH Certified  
 Focus Areas: Web Security, VAPT, Network Security
 
