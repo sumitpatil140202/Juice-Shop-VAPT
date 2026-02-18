@@ -32,6 +32,19 @@ User authentication endpoint (/rest/user/login)
 
 ---
 
+## Proof of Concept
+
+A malicious HTML file was created that automatically submits a login request to the application.
+
+The PoC demonstrates that the application processes authenticated requests from external origins without validating a CSRF token.
+
+Refer to:
+
+- poc/csrf_poc.html
+- screenshots/ for execution evidence
+
+---
+
 ## Evidence
 
 Refer to the screenshots showing:
@@ -66,3 +79,4 @@ PoC file available in the `poc/` directory.
 ## OWASP Mapping
 
 OWASP Top 10 2025 – A01: Broken Access Control
+
