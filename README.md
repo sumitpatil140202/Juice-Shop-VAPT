@@ -4,6 +4,10 @@
 ![Project Type](https://img.shields.io/badge/Type-VAPT-red)
 ![Methodology](https://img.shields.io/badge/Method-OWASP%20Testing%20Guide-green)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![OWASP Top 10](https://img.shields.io/badge/OWASP-Top%2010%202025-red)
+![CEH](https://img.shields.io/badge/Certification-CEH%20v13-blue)
+![Status](https://img.shields.io/badge/Project-Portfolio%20Ready-brightgreen)
+
 
 A comprehensive **manual web application security assessment** of the OWASP Juice Shop application.  
 This project demonstrates real-world penetration testing skills including vulnerability discovery, exploitation, and professional reporting.
